@@ -1,0 +1,1 @@
+(function(){var rail=document.querySelector('.stage-rail'),materials=document.querySelector('#materials');if(!rail||!materials)return;var io=new IntersectionObserver(function(es){es.forEach(function(e){rail.classList.toggle('is-covered',e.isIntersecting);});},{threshold:0.04});io.observe(materials);})();
